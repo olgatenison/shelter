@@ -1,0 +1,170 @@
+:root {
+  --primary-title-color: #ffffff;
+  --primary-pink-color: #f1cdb3;
+  --light-grey-color: #cdcdcd;
+
+  --darck-grey-color: #4c4c4c;
+}
+
+@font-face {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Georgia Regular"), url("../fonts/georgia.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Georgia";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Georgia Italic"), url("../fonts/georgiai.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Georgia Bold"), url("../fonts/georgiab.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Georgia";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Georgia Bold Italic"),
+    url("../fonts/georgiaz.woff") format("woff");
+}
+@font-face {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Arial Regular"), url("../fonts/arial.woff") format("woff");
+}
+@font-face {
+  font-family: "Arial";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Arial Italic"), url("../fonts/arialai.woff") format("woff");
+}
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--darck-grey-color);
+  background-color: black;
+}
+a {
+  text-decoration: none;
+}
+
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex: 1 1 auto;
+  background-color: blue;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0px 40px;
+  width: 100%;
+}
+.title {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 1.3;
+  color: var(--primary-title-color);
+}
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/* ----------------header---------------*/
+/* ----------------header---------------*/
+/* ----------------header---------------*/
+
+.header {
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  color: var(--primary-pink-color);
+
+  background-color: aqua;
+  width: 184px;
+}
+.header__logo h1 {
+  color: var(--primary-pink-color);
+
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: 6%;
+  background-color: aqua;
+  width: 184px;
+}
+.header__logo p {
+  font-family: Arial, sans-serif;
+  color: var(--primary-title-color);
+  font-size: 13px;
+  letter-spacing: 1.3px;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.header__navigation a {
+  font-family: Arial, sans-serif;
+  color: var(--light-grey-color);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.navigation__list {
+  display: flex;
+  justify-content: end;
+}
+.navigation__item {
+}
+.navigation__item:not(:last-child) {
+  margin-right: 35px;
+}
+.navigation__link {
+}
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/* ----------------header---------------*/
+/* ----------------header---------------*/
+/* ----------------header---------------*/
+.footer {
+  background-color: aqua;
+}
