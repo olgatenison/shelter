@@ -68,8 +68,8 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 1.6;
-  color: var(--darck-grey-color);
-  background-color: black;
+  color: var(--light-grey-color)
+  background-color: #262425;
 }
 a {
   text-decoration: none;
@@ -87,12 +87,11 @@ a {
 }
 .main {
   flex: 1 1 auto;
-  background-color: blue;
 }
 .container {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0px 40px;
+
   width: 100%;
 }
 .title {
@@ -111,16 +110,17 @@ a {
 /* ----------------header---------------*/
 
 .header {
+  background-color: transparent;
 }
 .header__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .header__logo {
   color: var(--primary-pink-color);
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   width: 184px;
   height: 90px;
@@ -128,8 +128,10 @@ a {
 .header__logo h1 {
   margin-top: 35px;
   color: var(--primary-pink-color);
-  font-size: 30px;
+  font-size: 34px;
+  letter-spacing: 6%;
   line-height: 0;
+  font-weight: 400;
 }
 .header__logo p {
   font-family: Arial, sans-serif;
@@ -180,14 +182,61 @@ a {
   left: 0;
   display: block;
 }
-.header__navigation a {
+
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/* ----------------notonly--------------*/
+/* ----------------notonly--------------*/
+/* ----------------notonly--------------*/
+
+.notonly {
+  background: url(../img/noise_transparent@2x.png),
+    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
+  height: 100vh;
+}
+
+.notonly__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.notonly__row {
+}
+.notonly__title {
+  font-size: 44px;
+  line-height: 1.3;
+  color: var(--primary-title-color);
+  max-width: 310px;
+  font-weight: 400;
+  margin-bottom: 42px;
+}
+.notonly__subtitle {
+  color: var(--light-grey-color);
+  max-width: 460px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 42px;
+}
+.notonly__btn {
+}
+.btn {
+  background-color: var(--primary-pink-color);
+  cursor: pointer;
+  padding: 15px, 45px;
+}
+.notonly__img {
+  max-width: 698px;
 }
 /*--------------------------------------*/
 /*--------------------------------------*/
 /*--------------------------------------*/
-/* ----------------header---------------*/
-/* ----------------header---------------*/
-/* ----------------header---------------*/
+/* ----------------notonly--------------*/
+/* ----------------notonly--------------*/
+/* ----------------notonly--------------*/
 .footer {
   background-color: aqua;
 }
