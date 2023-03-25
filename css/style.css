@@ -118,18 +118,18 @@ a {
 }
 .header__logo {
   color: var(--primary-pink-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  background-color: aqua;
   width: 184px;
+  height: 90px;
 }
 .header__logo h1 {
+  margin-top: 35px;
   color: var(--primary-pink-color);
-
-  font-size: 32px;
-  line-height: 35px;
-  letter-spacing: 6%;
-  background-color: aqua;
-  width: 184px;
+  font-size: 30px;
+  line-height: 0;
 }
 .header__logo p {
   font-family: Arial, sans-serif;
@@ -146,6 +146,8 @@ a {
   color: var(--light-grey-color);
   font-size: 15px;
   line-height: 1.6;
+
+  display: block;
 }
 
 .navigation__list {
@@ -153,11 +155,23 @@ a {
   justify-content: end;
 }
 .navigation__item {
+  position: relative;
 }
 .navigation__item:not(:last-child) {
   margin-right: 35px;
 }
-.navigation__link {
+.navigation__link::after:hover,
+.navigation__link::after:active,
+.navigation__link::after:focus {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: var(--primary-pink-color);
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+}
+.header__navigation a {
 }
 /*--------------------------------------*/
 /*--------------------------------------*/
