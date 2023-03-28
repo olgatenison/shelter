@@ -1,9 +1,11 @@
 :root {
   --primary-title-color: #ffffff;
+  --darck-white-color: #f6f6f6;
+
   --primary-pink-color: #f1cdb3;
   --light-grey-color: #cdcdcd;
-    --darck-black-color:#292929;
-    --medium-black-color: #545454;
+  --darck-black-color: #292929;
+  --medium-black-color: #545454;
   --darck-grey-color: #4c4c4c;
 }
 
@@ -69,8 +71,8 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 1.6;
-  color: var(--light-grey-color)
-  background-color: #262425;
+  color: var(--light-grey-color);
+  background-color: #ffffff;
 }
 a {
   text-decoration: none;
@@ -131,7 +133,7 @@ a {
   color: var(--primary-pink-color);
   font-size: 34px;
   letter-spacing: 6%;
-  
+
   font-weight: 400;
 }
 .header__logo p {
@@ -191,12 +193,12 @@ a {
 /* ----------------notonly--------------*/
 /* ----------------notonly--------------*/
 
-.notonly { 
+.notonly {
 }
-.wrapper__first{
- background: url(../img/noise_transparent@2x.png),
+.wrapper__first {
+  background: url(../img/noise_transparent@2x.png),
     radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
-  height: 820px;   
+  height: 820px;
 }
 .notonly__container {
   display: flex;
@@ -206,7 +208,7 @@ a {
 .notonly__row {
 }
 .notonly__title {
-    margin-top: 165px;
+  margin-top: 165px;
   font-size: 44px;
   line-height: 1.3;
   color: var(--primary-title-color);
@@ -230,7 +232,7 @@ a {
   cursor: pointer;
   padding: 15px 45px;
   border-radius: 100px;
-  color:var(--darck-black-color);
+  color: var(--darck-black-color);
   font-size: 17px;
   font-weight: 400;
   line-height: 1.3;
@@ -247,35 +249,126 @@ a {
 .about {
 }
 .about__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-    margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 100px;
 }
 .about__img {
 }
 .about__wrapper {
-    max-width: 430px;
-    margin-left: 120px;
+  max-width: 430px;
+  margin-left: 120px;
 }
+
 .about__title {
-    color: var(--medium-black-color);
-    font-size: 35px;
-    line-height: 1.3;
-    max-width: 350px;
-    margin-bottom: 25px;
-    margin-top: 10px;
-
+  max-width: 350px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  color: var(--medium-black-color);
+  font-size: 35px;
+  line-height: 1.3;
+  text-align: left;
 }
+
 .about__content {
-    color: var(--darck-grey-color);
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-    line-height: 1.6; 
-    margin-bottom: 25px;
+  color: var(--darck-grey-color);
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 25px;
 }
 
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/* ----------------ourfriends-----------*/
+/* ----------------ourfriends-----------*/
+/* ----------------ourfriends-----------*/
+.ourfriends {
+  background-color: var(--darck-white-color);
+}
+.ourfriends__container {
+  padding-top: 80px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about__title {
+  max-width: 400px;
+  text-align: center;
+  padding-bottom: 60px;
+  color: var(--medium-black-color);
+  font-size: 35px;
+  line-height: 1.3;
+}
+
+.ourfriends__wrapper {
+  margin-bottom: 60px;
+}
+.ourfriends__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.ourfriends__item {
+}
+.ourfriends__card {
+}
+.card {
+  display: block;
+  max-width: 270px;
+  background-color: #fafafa;
+  margin-right: 30px;
+  margin-left: 30px;
+  height: 435px;
+  border-radius: 9px;
+}
+
+.card__top {
+  margin-bottom: 30px;
+}
+.card__image {
+}
+.card__bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card__title {
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 6%;
+  color: var(--medium-black-color);
+  margin-bottom: 30px;
+}
+.card__add {
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 6%;
+  color: var(--darck-black-color);
+  padding: 15px 45px;
+  border-radius: 100px;
+  border: #f1cdb3 solid 2px;
+  background-color: transparent;
+}
+.ourfriends__btn {
+}
+.ourfriends__arrow {
+  height: 52px;
+  width: 52px;
+  border-radius: 100px;
+  border: #f1cdb3 solid 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*--------------------------------------*/
 /*--------------------------------------*/
 /*--------------------------------------*/
