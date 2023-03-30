@@ -7,6 +7,7 @@
   --darck-black-color: #292929;
   --medium-black-color: #545454;
   --darck-grey-color: #4c4c4c;
+  --medium-grey-color: #b2b2b2;
 }
 
 @font-face {
@@ -375,16 +376,124 @@ a {
 /*--------------------------------------*/
 /*--------------------------------------*/
 /*--------------------------------------*/
-/* ----------------notonly--------------*/
-/* ----------------notonly--------------*/
-/* ----------------notonly--------------*/
+/* ----------------help-----------------*/
+/* ----------------help-----------------*/
+/* ----------------help-----------------*/
+.help {
+}
+.help__container {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.help__title {
+  font-size: 35px;
+  line-height: 1.3;
+  letter-spacing: 6%;
+  color: var(--medium-black-color);
+  max-width: 308px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.help__list {
+  display: flex;
+  gap: 55px 120px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1190px;
+}
+.help__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.help__icon {
+  margin-bottom: 32px;
+}
+.help__text {
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 6%;
+  color: var(--medium-black-color);
+}
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/* -------------inaddition--------------*/
+/* -------------inaddition--------------*/
+/* -------------inaddition--------------*/
+
+.inaddition {
+  background-color: var(--darck-white-color);
+}
+.inaddition__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+.inaddition__img {
+}
+.inaddition__wrapper {
+  padding-left: 30px;
+}
+.inaddition__title {
+  font-size: 35px;
+  line-height: 1.3;
+  letter-spacing: 6%;
+  color: var(--medium-black-color);
+  max-width: 308px;
+
+  margin-bottom: 20px;
+}
+.inaddition__content {
+  font-size: 15px;
+  line-height: 1.1;
+
+  color: var(--medium-black-color);
+  margin-bottom: 20px;
+}
+.inaddition__card {
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 6%;
+  padding: 10px 15px 10px 60px;
+  width: 350px;
+  border-radius: 9px;
+
+  display: block;
+  margin-bottom: 20px;
+  color: var(--medium-black-color);
+  background-color: var(--primary-pink-color);
+  position: relative;
+}
+.inaddition__card::before {
+  content: "";
+  width: 30px;
+  height: 23px;
+  background-image: url(../img/credit-card.svg);
+  position: absolute;
+  left: 15px;
+}
+.inaddition__nb {
+  max-width: 380px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-style: italic;
+  color: var(--medium-grey-color);
+}
 
 /*--------------------------------------*/
 /*--------------------------------------*/
 /*--------------------------------------*/
-/* ----------------notonly--------------*/
-/* ----------------notonly--------------*/
-/* ----------------notonly--------------*/
+/* -------------inaddition--------------*/
+/* -------------inaddition--------------*/
+/* -------------inaddition--------------*/
+
 .footer {
   background-color: aqua;
 }
