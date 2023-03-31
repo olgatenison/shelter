@@ -115,6 +115,7 @@ a {
 
 .header {
   background-color: transparent;
+  margin-top: 30px;
 }
 .header__container {
   display: flex;
@@ -130,7 +131,6 @@ a {
   height: 90px;
 }
 .header__logo h1 {
-  margin-top: 30px;
   color: var(--primary-pink-color);
   font-size: 34px;
   letter-spacing: 6%;
@@ -299,7 +299,7 @@ a {
   flex-direction: column;
 }
 
-.about__title {
+.ourfriends__title {
   max-width: 400px;
   text-align: center;
   padding-bottom: 60px;
@@ -436,6 +436,7 @@ a {
   padding-bottom: 100px;
 }
 .inaddition__img {
+  max-width: 505px;
 }
 .inaddition__wrapper {
   padding-left: 30px;
@@ -490,10 +491,76 @@ a {
 /*--------------------------------------*/
 /*--------------------------------------*/
 /*--------------------------------------*/
-/* -------------inaddition--------------*/
-/* -------------inaddition--------------*/
-/* -------------inaddition--------------*/
+/* -------------footer------------------*/
+/* -------------footer------------------*/
+/* -------------footer------------------*/
 
 .footer {
-  background-color: aqua;
+  background-color: var(--darck-black-color);
+  background: url(../img/noise_transparent@2x.png),
+    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
+}
+.footer__container {
+  padding-top: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer__column {
+  max-width: 300px;
+}
+.footer__title {
+  font-size: 35px;
+  line-height: 1.3;
+  max-width: 278px;
+  padding-bottom: 35px;
+  color: var(--primary-title-color);
+}
+.footer__adresslist {
+}
+.footer__adressitem {
+  margin-bottom: 30px;
+}
+.footer__adresslink {
+  color: var(--primary-pink-color);
+  letter-spacing: 6%;
+  font-size: 20px;
+  line-height: 1.15;
+  padding-left: 60px;
+}
+.mail {
+  position: relative;
+}
+.mail::before {
+  content: "";
+  width: 40px;
+  height: 26px;
+  background-image: url(../img/mail.svg);
+  position: absolute;
+  left: 0px;
+}
+.phone {
+  position: relative;
+}
+.phone::before {
+  content: "";
+  width: 40px;
+  height: 32px;
+  background-image: url(../img/phone.svg);
+  position: absolute;
+  left: 0px;
+}
+.adress {
+  position: relative;
+  padding-left: 45px;
+}
+.adress::before {
+  content: "";
+  width: 22px;
+  height: 32px;
+  background-image: url(../img/pin.svg);
+  position: absolute;
+  left: 0px;
+}
+.footer__img {
 }
